@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Trijam Timer"
+config/tags=PackedStringArray("tools", "trijam")
+run/main_scene="res://application.tscn"
+config/features=PackedStringArray("4.1", "GL Compatibility")
+run/low_processor_mode=true
+boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=400
+window/size/viewport_height=70
+window/size/initial_position_type=3
+window/size/always_on_top=true
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://test.en.translation", "res://test.es.translation", "res://test.ja.translation")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
